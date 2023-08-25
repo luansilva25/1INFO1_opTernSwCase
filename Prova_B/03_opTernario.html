@@ -13,9 +13,16 @@
     */
 
     //Entrada
-
+const dias= parseInt(prompt('informe quantos dias ficara no local'))
+let calculo1= dias * 190
+let calculo2 = dias * 180
+let calculo3 = dias * 160
     
     //Processamento
+ let mensagem = (dias === 1)? alert('o valor da diaria é de R$ 200'):
+ (dias > 1 && dias <=3)? alert(` o valor da diaria é de R$ ${calculo1}`):
+ (dias > 3 && dias <= 7)? alert(`o valor da diaria é de R$ ${calculo2}`):
+ (dias > 7)?alert(`o valor da diaria é de R$ ${calculo3}`):alert('valor invalido');
 
     
     //Saída
@@ -26,7 +33,7 @@
     Entrada: Quantidade de diárias
     - Informando 1, o custo será de R$ 200,00
     - Informando 2, o custo será de R$ 380,00
-    - Informando 5, o custo será de R$ 800,00
+    - Informando 5, o custo será de R$ 900,00
     - Informando 8, o custo será de R$ 1.280,00
     */
 </script>

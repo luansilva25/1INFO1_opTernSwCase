@@ -12,10 +12,15 @@
     */
 
     //Entrada
-
+const precocasa= Number(prompt('informe o preço da casa que deseja comprar').replace(',','.'))
+const financiamento= Number(prompt('informe quantos anos deseja financiar').replace(',','.'))
+let calculo = precocasa *1.15 
+let calculo2 = precocasa * 1.30
 
     //Processamento
-
+let mensagem = (financiamento === 1)? alert(`não havera financiamento o preço da casa continua sendo ${precocasa}`):
+(financiamento > 1 && financiamento <= 12)? alert(`o preço da casa sera de R$ ${calculo.toFixed(2).replace('.',',')}`):
+(financiamento > 12 && financiamento <= 24)? alert(`o preço da casa sera de R$ ${calculo2.toFixed(2).replace('.',',')}`):alert('não é possivel financiar');
     
     //Saída
 

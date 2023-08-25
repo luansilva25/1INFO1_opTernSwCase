@@ -12,10 +12,23 @@
     */
 
     //Entrada
-
+const cha= prompt('informe o sabor do cha C- camomila L- Capim-limão E- erva-doce').toLowerCase().trim()
     
     //Processamento
-
+switch(cha){
+    case "c":
+        alert("Chá de Camomila: R$ 4,50")
+        break;
+        case "l":
+            alert("Chá de Capim-Limão: R$ 5,00")
+            break;
+            case "e":
+                alert("Chá de Erva-Doce: R$ 4,00")
+                break;
+                default:
+                    alert('valor invalido')
+                    break;
+}
     
     //Saída
 

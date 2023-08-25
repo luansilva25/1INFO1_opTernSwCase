@@ -10,10 +10,23 @@
     */
 
     //Entrada
-
+const local = prompt('informe o lugar que deseja residir (P-praia F-fazenda U-urbano)').toLowerCase().trim()
     
     //Processamento
-
+switch(local){
+    case "p":
+        alert('Litoral')
+        break;
+        case "f":
+            alert('Interior')
+            break;
+        case "u":
+                alert('Cidade')
+                break;
+                default:
+                    alert('valor invalido')
+                    break;
+}
     
     //Saída
 

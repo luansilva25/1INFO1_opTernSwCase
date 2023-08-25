@@ -13,11 +13,56 @@
     */
 
     //Entrada
+    const bebida = prompt('informe a que tipo de bebida deseja comprar (RF-refrigerante SU-suco Agua-AG Café-CF)').toLowerCase().trim()
+    const qtd = parseInt(prompt('informe a quantidade que deseja comprar'))
+    let calculo = 0
 
-    
     //Processamento
+    switch (bebida) {
+        case 'rf':
+            calculo = qtd * 6.19
+            switch (calculo) {
+                case calculo > 150:
+                    calculo2 = (qtd * 6.19) - (qtd * 6.19) * 0.10
+                    alert(`o valor com 10% de desconto é de R$ ${calculo2.toFixed(2).replace('.', ',')}`)
+                    break;
+            }
+            alert(`o custo será de R$ ${calculo.toFixed(2).replace('.', ',')}`)
+            break;
+        case "su":
+            calculo = qtd * 9.80
+            switch (calculo) {
+                case calculo > 150:
+                    calculo2 = (qtd * 9.80) - (qtd * 9.80) * 0.10
+                    alert(`o valor com 10% de desconto é de R$ ${calculo2.toFixed(2).replace('.', ',')}`)
+                    break;
+            }
+            alert(`o custo será de R$ ${calculo.toFixed(2).replace('.', ',')}`)
+            break;
+        case 'ag':
+            calculo = qtd * 5
+            switch (calculo) {
+                case calculo > 150:
+                    calculo2 = (qtd * 5) - (qtd * 5) * 0.10
+                    alert(`o valor com 10% de desconto é de R$ ${calculo2.toFixed(2).replace('.', ',')}`)
+            }
+            alert(`o custo será de R$ ${calculo.toFixed(2).replace('.', ',')}`)
+            break;
+        case 'cf':
+            calculo = qtd * 10
+            switch (calculo) {
+                case calculo > 150:
+                    calculo2 = (qtd * 10) - (qtd * 10) * 0.10
+                    alert(`o valor com 10% de desconto é de R$ ${calculo2.toFixed(2).replace('.', ',')}`)
+                    break;
+            }
+            alert(`o custo será de R$ ${calculo.toFixed(2).replace('.', ',')}`)
+            break;
+        default:
+            alert('valor invalido')
+            break;
+    }
 
-    
     //Saída
 
 
